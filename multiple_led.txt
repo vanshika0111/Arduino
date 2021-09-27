@@ -3,6 +3,7 @@
 
 int LED1 = 13;
 int LED2 = 4;
+int LED3 = 7;
 
 void setup()
 {
@@ -16,9 +17,13 @@ void setup()
 //  delay(1000); // Wait for 1000 millisecond(s)
 //  digitalWrite(LED1, LOW);
 //  delay(1000); // Wait for 1000 millisecond(s)
-// digitalWrite(LED2, HIGH);
-// delay(1000); // Wait for 1000 millisecond(s)
+//  digitalWrite(LED2, HIGH);
+//  delay(1000); // Wait for 1000 millisecond(s)
 //  digitalWrite(LED2, LOW);
+//  delay(1000); // Wait for 1000 millisecond(s)
+//  digitalWrite(LED3, HIGH);
+//  delay(1000); // Wait for 1000 millisecond(s)
+//  digitalWrite(LED3, LOW);
 //  delay(1000); // Wait for 1000 millisecond(s)
 //}
 
@@ -28,8 +33,12 @@ void loop()
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(LED2, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(LED3, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(LED1, LOW);
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(LED2, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(LED3, LOW);
   delay(1000); // Wait for 1000 millisecond(s)
 }
