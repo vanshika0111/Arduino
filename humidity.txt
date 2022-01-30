@@ -1,0 +1,24 @@
+// program to measure the humidity & temperature of a place every 5 seconds
+
+#include <DHT.h>
+#define DHTPIN D1
+#define DHTTYPE DHT22
+DHT dht(DHTPIN, DHTTYPE);
+float humidity;
+float temp;
+
+void setup(){
+	Serial.begin(4800);
+	dht.begin();
+}
+
+void loop(){
+	humidity = dht.readHumidity();
+	temp = dht.readTemperature();
+	Serial.print("Humidity: ");
+	Serail.printf(humidity);
+	Serial.print(" %, Temp: ");
+	Serial.print(temp);
+	Serial.println(" c");
+	delay(5000);
+}
