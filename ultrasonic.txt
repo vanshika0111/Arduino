@@ -1,0 +1,25 @@
+// NodeMCU
+// program to detect distance from objects
+
+int echo = D1;
+int trigger = D2;
+long traveltime;
+
+void setup(){
+	pinMode(trigger, OUTPUT);
+	pinMode(echo, INPUT)'
+	Serial.begin(9600);
+}
+
+void loop(){
+	digitalWrite(trigger, LOW);
+	delayMicroseconds(10);
+	digitalWrite(trigger, HIGH);
+	delayMicroseconds(10);
+	digitalWrite(trigger, LOW);
+	traveltime = pusleIn(echo, HIGH);
+	distance = duration * 0.034/2;
+	Serial.print("Distance = ");
+	Serial.println(distance);
+}
+	
