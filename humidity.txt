@@ -1,3 +1,4 @@
+// NodeMCU
 // program to measure the humidity & temperature of a place every 5 seconds
 
 #include <DHT.h>
